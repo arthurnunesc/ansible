@@ -1,4 +1,4 @@
-# to run it run "sudo ansible-pull -U ${repo_url}"
+# to run it run "sudo ansible-pull -U https://github.com/arthurnunesc/ansible.git"
 - hosts: localhost
   connection: local
   become: true
