@@ -1,0 +1,10 @@
+# to run it run "sudo ansible-pull -U ${repo_url}"
+- hosts: localhost
+  become: true
+  tasks:
+    - name: Install packages
+      dnf:
+        name:
+          - htop
+          - mc
+          - tmux
