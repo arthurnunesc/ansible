@@ -1,29 +1,28 @@
-- name: Delete alt tab default shortcut
-  key: "/org/gnome/desktop/wm/keybindings/switch-applications"
-  value: "['']"
+- name: Show weekday on panel
+  key: "/org/gnome/desktop/interface/clock-show-weekday"
+  value: "true"
   state: present
+# - name: Delete alt tab default shortcut
+#   key: "/org/gnome/desktop/wm/keybindings/switch-applications"
+#   value: "['']"
+#   state: present
 
-- name: Delete shift alt tab default shortcut
-  key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
-  value: "['']"
-  state: present
+# - name: Delete shift alt tab default shortcut
+#   key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
+#   value: "['']"
+#   state: present
 
-- name: Add Windows like alt tab shortcut
-  key: "/org/gnome/desktop/wm/keybindings/switch-windows"
-  value: "['<Super>Tab', '<Alt>Tab']"
-  state: present
+# - name: Add Windows like alt tab shortcut
+#   key: "/org/gnome/desktop/wm/keybindings/switch-windows"
+#   value: "['<Super>Tab', '<Alt>Tab']"
+#   state: present
 
-- name: Add Windows like shift alt tab shortcut
-  key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
-  value: "['<Shift><Super>Tab', '<Shift><Alt>Tab']"
-  state: present
+# - name: Add Windows like shift alt tab shortcut
+#   key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
+#   value: "['<Shift><Super>Tab', '<Shift><Alt>Tab']"
+#   state: present
 
-- name: Set alt tab to work between workspaces
-  key: "/org/gnome/shell/window-switcher/current-workspace-only"
-  value: "false"
-  state: present
-# - name: Set keyboard layout
-#   community.general.dconf:
-#     key: "/org/gnome/desktop/input-sources/sources"
-#     value: "[('xkb', 'br')]"
-#     state: present
+# - name: Set alt tab to work between workspaces
+#   key: "/org/gnome/shell/window-switcher/current-workspace-only"
+#   value: "false"
+#   state: present
