@@ -3,19 +3,15 @@
   dconf: key="/org/gnome/desktop/wm/keybindings/switch-applications" value="['']"
 
 - name: Delete shift+alt+tab default shortcut
-  become_user: arthur
   dconf: key="/org/gnome/desktop/wm/keybindings/switch-applications-backward" value="['']"
 
 - name: Add Windows-like alt+tab shortcut
-  become_user: arthur
   dconf: key="/org/gnome/desktop/wm/keybindings/switch-windows" value="['<Super>Tab', '<Alt>Tab']"
 
 - name: Add Windows-like shift+alt+tab shortcut
-  become_user: arthur
   dconf: key="/org/gnome/desktop/wm/keybindings/switch-windows-backward" value="['<Shift><Super>Tab', '<Shift><Alt>Tab']"
 
 - name: Set alt+tab to work between workspaces
-  become_user: arthur
   dconf: key="/org/gnome/shell/window-switcher/current-workspace-only" value="false"
 # - name: Set keyboard layout
 #   community.general.dconf:
