@@ -1,22 +1,22 @@
-- name: Delete alt+tab default shortcut
+- name: Delete alt tab default shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-applications"
   state: absent
 
-- name: Delete shift+alt+tab default shortcut
+- name: Delete shift alt tab default shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
   state: absent
 
-- name: Add Windows-like alt+tab shortcut
+- name: Add Windows like alt tab shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-windows"
   value: "['<Super>Tab', '<Alt>Tab']"
   state: present
 
-- name: Add Windows-like shift+alt+tab shortcut
+- name: Add Windows like shift alt tab shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-windows-backward"
   value: "['<Shift><Super>Tab', '<Shift><Alt>Tab']"
   state: present
 
-- name: Set alt+tab to work between workspaces
+- name: Set alt tab to work between workspaces
   key: "/org/gnome/shell/window-switcher/current-workspace-only"
   value: "false"
   state: present
