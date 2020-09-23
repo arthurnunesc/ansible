@@ -1,10 +1,13 @@
 # to run it run "sudo ansible-pull -U ${repo_url}"
 - hosts: localhost
+  connection: local
   become: true
-  tasks:
-    - name: Install packages
+
+  pre_tasks:
+    - name: update_repositories
       dnf:
-        name:
-          - htop
-          - mc
-          - tmux
+        update_cache: yes
+      changed_when: False
+
+  tasks:
+    - include: tasks/packages.yml
