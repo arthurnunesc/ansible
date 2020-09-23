@@ -1,8 +1,7 @@
-- name: Install packages
+- name: install packages
   package:
     name:
       - htop
-
       - https://dl.google.com/linux/direct/google-chrome-stable_current_x86_64.rpm
       - python-psutil
     state: present

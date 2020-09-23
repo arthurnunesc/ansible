@@ -1,7 +1,6 @@
-- name: Show weekday on panel
+- name: show weekdays on panel
   key: "/org/gnome/desktop/interface/clock-show-weekday"
   value: "true"
-  state: present
 # - name: Delete alt tab default shortcut
 #   key: "/org/gnome/desktop/wm/keybindings/switch-applications"
 #   value: "['']"
