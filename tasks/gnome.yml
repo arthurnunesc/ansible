@@ -1,10 +1,12 @@
 - name: Delete alt tab default shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-applications"
-  state: absent
+  value: "['']"
+  state: present
 
 - name: Delete shift alt tab default shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-applications-backward"
-  state: absent
+  value: "['']"
+  state: present
 
 - name: Add Windows like alt tab shortcut
   key: "/org/gnome/desktop/wm/keybindings/switch-windows"
