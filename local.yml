@@ -1,3 +1,4 @@
+# you need to install ansible to run this, use python to do it with "sudo python -m pip install ansible"
 # to run it run "sudo ansible-pull -U https://github.com/arthurnunesc/ansible.git"
 - hosts: localhost
   connection: local
